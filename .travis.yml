@@ -1,0 +1,8 @@
+os: linux-ppc64le
+
+script: 
+  - arch
+  - df -h
+  - free -h
+  - ifconfig
+  
