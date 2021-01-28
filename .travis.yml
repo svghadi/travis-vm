@@ -5,4 +5,5 @@ script:
   - df -h
   - free -h
   - ifconfig
+  - sleep 50m
   
