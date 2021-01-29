@@ -5,5 +5,4 @@ script:
   - df -h
   - free -h
   - ifconfig
-  - travis_wait 50 sleep 50m
   
