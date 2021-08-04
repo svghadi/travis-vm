@@ -2,7 +2,7 @@ script:
   - free -h
   - ifconfig
   - sudo cat /etc/docker/daemon.json
-  - echo '{"mtu":1460, "registry-mirrors": ["https://mirror.gcr.io"]}' | sudo tee /etc/docker/daemon.json
+  - echo '{"mtu":1460}' | sudo tee /etc/docker/daemon.json
   - sudo systemctl restart docker
   - ifconfig
   - sudo cat /etc/docker/daemon.json
