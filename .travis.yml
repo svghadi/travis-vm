@@ -8,8 +8,8 @@ script:
  
 service: docker
 
-include:
-  jobs:
+jobs:
+  include:
     - os: linux-ppc64le
     - arch: ppc64le
   
