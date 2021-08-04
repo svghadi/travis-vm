@@ -3,7 +3,7 @@ script:
   - ifconfig
   - sudo cat /etc/docker/daemon.json
   - echo '{"mtu":1450}' | sudo tee /etc/docker/daemon.json
-  - sudo sysemctl daemon-reload
+  - sudo systemctl daemon-reload
   - sudo systemctl restart docker
   - ifconfig
   - sudo cat /etc/docker/daemon.json
