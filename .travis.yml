@@ -1,4 +1,5 @@
 script: 
+  - lscpu
   - free -h
   - ifconfig
   - sudo cat /etc/docker/daemon.json
