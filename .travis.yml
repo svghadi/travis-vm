@@ -21,12 +21,12 @@ service: docker
 jobs:
   include:
     - os: linux-ppc64le
-    - arch: ppc64le
-      dist: xenial
-    - arch: ppc64le
-      dist: bionic
-    - arch: ppc64le
-      dist: focal
+    #- arch: ppc64le
+    #  dist: xenial
+    #- arch: ppc64le
+    #  dist: bionic
+    #- arch: ppc64le
+    #  dist: focal
     
   
   
