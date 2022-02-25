@@ -1,7 +1,7 @@
 script: 
   - lscpu
   - free -h
-  - curl https://get.rvm.io
+  #- curl https://get.rvm.io
   #- sudo apt update -y
   #- sudo apt install -y linux-headers-$(uname -r)
   #- ifconfig
