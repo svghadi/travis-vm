@@ -1,6 +1,7 @@
 script: 
   - lscpu
   - free -h
+  - ping -c 4 google.com
   #- curl https://get.rvm.io
   #- sudo apt update -y
   #- sudo apt install -y linux-headers-$(uname -r)
