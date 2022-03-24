@@ -3,7 +3,7 @@ os: linux-ppc64le
 jobs:
   include:
     - stage: Network Test
-      name: ping & curl
+      name: ping and curl
       script:
         - ifconfig
         - ping -c 4 google.com
