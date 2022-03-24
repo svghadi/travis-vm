@@ -32,12 +32,12 @@ jobs:
       compiler: clang
       script:
         - $CC --version
-    - name: IBM ATC
-      language: cpp
-      compiler: /opt/at12.0/bin/gcc
-      env: PATH=/opt/at12.0/bin:/opt/at12.0/sbin:$PATH CMAKE_PREFIX_PATH=/opt/at12.0
-      script:
-        - /opt/at*/bin/gcc --version
+    #- name: IBM ATC
+    #  language: cpp
+    #  compiler: /opt/at12.0/bin/gcc
+    #  env: PATH=/opt/at12.0/bin:/opt/at12.0/sbin:$PATH CMAKE_PREFIX_PATH=/opt/at12.0
+    #  script:
+    #    - /opt/at*/bin/gcc --version
       
     - stage: CPP Language Test
       name: GCC
@@ -50,12 +50,12 @@ jobs:
       compiler: clang
       script:
         - $CC --version
-    - name: IBM ATC
-      language: cpp
-      compiler: /opt/at12.0/bin/g++
-      env: PATH=/opt/at12.0/bin:/opt/at12.0/sbin:$PATH CMAKE_PREFIX_PATH=/opt/at12.0
-      script:
-        - /opt/at*/bin/g++ --version
+    #- name: IBM ATC
+    #  language: cpp
+    #  compiler: /opt/at12.0/bin/g++
+    #  env: PATH=/opt/at12.0/bin:/opt/at12.0/sbin:$PATH CMAKE_PREFIX_PATH=/opt/at12.0
+    #  script:
+    #    - /opt/at*/bin/g++ --version
 
     - stage: Go Language Test
       language: go
