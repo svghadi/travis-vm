@@ -18,16 +18,14 @@ jobs:
         - docker pull alpine:latest
         - docker run -t --rm alpine:latest uname -a
         
-     - name: Apt install test
-       os: linux-ppc64le
-       addons:
+    - name: Apt install test
+      os: linux-ppc64le
+      addons:
         apt:
           update: true
           packages:
             - cmake
             - time
-       script:
+      script:
         - sudo apt update -y
         - sudo apt install -y linux-headers-$(uname -r)
-
-  
