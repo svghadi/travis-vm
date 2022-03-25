@@ -156,6 +156,12 @@ jobs:
       script:
         - psql --version
         - psql -c 'SELECT datname FROM pg_database;' -U postgres
+    - name: Elasticsearch
+      service: elasticsearch
+      before_script: sleep 15s
+      script:
+        - systemctl is-active elasticsearch
+        - sudo elasticsearch --version
     - name: Mongodb(Not supported)
       service: mongodb
       script:
